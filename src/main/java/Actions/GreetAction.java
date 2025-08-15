@@ -25,7 +25,7 @@ public class GreetAction extends HttpServlet {
     
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String name = request.getParameter("name");
-		String message = greet.greet(name); // Call your EJB
+		String message = greet.greet(name);
 
 	    request.setAttribute("message", message);
 	    request.getRequestDispatcher("Hello.jsp").forward(request, response);
