@@ -7,14 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 	<%@ include file="Home.jsp"  %>
-	<h2>Selected APP : Greet </h2>
-	<form action="greet" method="post">
-		<input type="text" name="name" /> <input type="submit" value="submit" />
+	<h2>Selected APP : Names </h2>
+	<form action="names" method="post">
+		<input type="text" name="name" placeholder="Name" /> 
+		<input type="submit" value="Add" />
 	</form>
-
-	<p>Message form Ejb : ${message}</p>
-
+	
+	<p>${message}</p>
+	
+	
 </body>
 </html>
